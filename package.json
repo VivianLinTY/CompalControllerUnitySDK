@@ -1,0 +1,15 @@
+{
+  "name": "com.compal.controller.servicesdk",
+  "version": "1.0.0",
+  "displayName": "Controller SDK",
+  "description": "Controller SDK",
+  "unity": "2019.4",
+
+  "dependencies": {
+  },
+ "keywords": [
+  ],
+  "author": {
+    "name": "Zoe.lin"
+  }
+}
