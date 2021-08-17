@@ -20,13 +20,13 @@ namespace CompalControllerSdk.Client
             proxyClass.CallStatic("registerCompalControllerCallback", activity, callback);
         }
 
-        public static void unRegisterControllerCallback(ICompalControllerLibCallback callback)
+        public static void unRegisterControllerCallback()
         {
             Log.Instance.V(TAG, "unRegisterControllerCallback");
             AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
             AndroidJavaObject activity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
             AndroidJavaClass proxyClass = new AndroidJavaClass("com.compal.controllerlib.CompalControllerUnityProxy");
-            proxyClass.CallStatic("unRegisterCompalControllerCallback", activity, callback);
+            proxyClass.CallStatic("unRegisterCompalControllerCallback", activity);
         }
 
         public static void getDevices()
